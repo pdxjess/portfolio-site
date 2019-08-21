@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* by changing our html global variable to a standard of 100% (16px), 1 rem = 16px. divided 100/16*10 to get 10px per rem */
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
