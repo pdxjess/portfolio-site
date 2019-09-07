@@ -1,31 +1,3 @@
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateY(-10rem); }
-  50% {
-    transform: translateY(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  50% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
 *,
 *::after,
 *::before {
@@ -35,13 +7,14 @@
 
 /* by changing our html global variable to a standard of 100% (16px), 1 rem = 16px. divided 100/16*10 to get 10px per rem */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Poiret One";
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
@@ -49,40 +22,30 @@ body {
   padding: 0rem; }
 
 .heading-primary {
-  color: #E3F4F2;
+  color: black;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
+    font-size: 5rem;
+    font-weight: 900;
     text-align: center;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    /* animation-iteration-count: 3; this will cause animation to happen multiple times*/
-    /* animation-delay: 3s; this will cause a delay*/ }
+    letter-spacing: 3rem; }
   .heading-primary--sub {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation-name: moveInRight;
-    animation-duration: 3s;
-    text-align: center;
-    animation-timing-function: ease-out; }
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    text-align: center; }
 
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
   background-image: linear-gradient(to right, #000000, #277950);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   transition: all .2s; }
 
 .heading-tertiary {
@@ -156,17 +119,6 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translate(0px); }
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; }
-
 .composition {
   position: relative; }
   .composition__photo {
@@ -238,18 +190,34 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 100vh;
-  background-color: white;
-  background-size: cover;
-  background-position: top;
-  text-align: center;
-  position: relative; }
+  height: 100vh; }
   .header__text-box {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: 20%;
+    max-width: 700px;
     text-align: center; }
+
+img.header-img {
+  max-width: 400px;
+  float: right;
+  right: 25%;
+  margin: 120px;
+  margin-bottom: 70px;
+  padding: 10px;
+  position: absolute;
+  right: 0; }
+
+.arrow img {
+  width: 40px;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  padding-top: 30px; }
+  .arrow img:hover {
+    cursor: pointer; }
 
 .section-about {
   background-color: white;

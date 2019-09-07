@@ -1,16 +1,36 @@
 .header {
   height: 100vh;
-  background-color: white;
-  opacity: 0;
-  background-size: cover;
-  background-position: top;
-  text-align: center;
-  position: relative;
   &__text-box {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: 20%;
+
+    max-width: 700px;
     text-align: center;
+  }
+}
+
+img.header-img {
+  max-width: 400px;
+  float: right;
+  right:25%;
+  margin: 120px;
+  margin-bottom: 70px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.arrow img {
+  width: 40px;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  padding-top: 30px;
+
+  &:hover {
+    cursor: pointer;
   }
 }
