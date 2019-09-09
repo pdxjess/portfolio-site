@@ -44,7 +44,6 @@ body {
   text-align: center;
   font-weight: 900;
   text-transform: uppercase;
-  display: inline-block;
   letter-spacing: 1px; }
 
 .heading-tertiary {
@@ -66,8 +65,9 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
-.u-margin-bottom-big {
-  margin-bottom: 8rem; }
+.projects-header {
+  margin-bottom: 8rem;
+  text-align: center; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -180,6 +180,24 @@ img.header-img {
   padding-top: 30px; }
   .arrow img:hover {
     cursor: pointer; }
+
+.nav-bar li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px; }
+
+.nav-bar li a {
+  text-decoration: none;
+  color: #ffffff; }
+
+.nav-bar li:hover {
+  border-bottom: 3px solid black; }
 
 .section-about {
   background-color: white;
