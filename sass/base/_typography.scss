@@ -1,22 +1,24 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
+  font-size: 16px;
   line-height: 1.7;
   color: black;
   padding: 0rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .heading-primary {
   color: black;
-  text-transform: uppercase;
+  text-align: center;
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  position: relative;
+  top: 10%;
   &--main {
     display: block;
     font-size: 6rem;
     font-weight: 900;
-    text-align: center;
-    letter-spacing: 3rem;
+    letter-spacing: 2rem;
   }
   &--sub {
     display: block;
@@ -28,22 +30,49 @@ body {
 }
 //gradient for header in main//
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-family: 'Lato', sans-serif;
   color: black;
   text-align: center;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
+  position: relative;
+  display: inline;
 }
-.heading-tertiary {
-  font-size: $default-font-size;
-  font-weight: 700;
-  text-transform: uppercase;
+// Adds 3D effect to header
+.heading-secondary:after {
+  content: "Projects";
+  position: absolute;
+  left: 1%;
+  color: #dbd163;
 }
-.paragraph {
-  font-size: $default-font-size;
-  &:not(last-child) {
-    margin-bottom: 3rem;
-  }
+
+.heading-tertiary h3 {
+  color: red;
+  font: bold Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902;
+  -webkit-transition: all 0.12s ease-out;
+  -moz-transition:    all 0.12s ease-out;
+  -ms-transition:     all 0.12s ease-out;
+  -o-transition:      all 0.12s ease-out;
+}
+
+//targets header and not paragraph//
+.redesign-area:hover > h3 {
+  position: relative;
+  top: -3px;
+  left: -3px;
+  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+}
+
+.paragraph-redesign {
+  font-size: 20px;
+  max-width: 50%;
+}
+
+.redesign-sentence {
+  color: #243d87;
+  text-shadow: 2px bold grey;
+  font-weight: bold;
 }
