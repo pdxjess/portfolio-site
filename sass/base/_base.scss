@@ -9,6 +9,33 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include respond(phone) {
+    font-size: 50%;
+    .heading-primary {
+      line-height: normal;
+      top:0;
+    }
+    .arrow img {
+      left: 45%;
+    }
+    .paragraph-redesign {
+      max-width: 100%;
+      padding-left: 10px;
+    }
+  }
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+  @include respond(tab-land) {
+    font-size: 60%;
+  }
+  @include respond(desktop) {
+    font-size: 80%;
+  }
+  @include respond(big-desktop) {
+    font-size: 100%;
+  }
 }
 body {
   box-sizing: border-box;

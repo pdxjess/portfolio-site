@@ -6,24 +6,39 @@
   }
 }
 
-@mixin breakpoint($class) {
-  @if $class == xs {
-    @media (max-width: 767px) { @content; }
-  }
+// MEDIA QUERY MANAGER
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+1200-1800 is where our normal styles apply
+1800px+: Big desktop
+*/
 
-  @else if $class == sm {
-    @media (min-width: 768px) { @content; }
+@mixin respond-phone {
+  @media (max-width: 600px) {@content};
+}
+/*
+$breakpoint arguement chocies:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {@content};
   }
-
-  @else if $class == md {
-    @media (min-width: 992px) { @content; }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {@content};
   }
-
-  @else if $class == lg {
-    @media (min-width: 1200px) { @content; }
+  @if $breakpoint == tab-land {
+    @media (max-width: 1200px) {@content};
   }
-
-  @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  @if $breakpoint == desktop {
+    @media (min-width: 1200px) {@content};
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1800px) {@content};
   }
 }

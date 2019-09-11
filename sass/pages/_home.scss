@@ -3,9 +3,6 @@
   padding: 0rem 0;
   margin-top: 0vh;
   margin: 10px;
-  @include breakpoint(sm) {
-    width: 100%;
-  }
 }
 .section-features {
   padding: 30px;

@@ -1,3 +1,17 @@
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+1200-1800 is where our normal styles apply
+1800px+: Big desktop
+*/
+/*
+$breakpoint arguement chocies:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -37,6 +51,29 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; }
+      html .heading-primary {
+        line-height: normal;
+        top: 0; }
+      html .arrow img {
+        left: 45%; }
+      html .paragraph-redesign {
+        max-width: 100%;
+        padding-left: 10px; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 60%; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 80%; } }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 100%; } }
 
 body {
   box-sizing: border-box; }
@@ -99,16 +136,18 @@ body {
   position: relative;
   top: -3px;
   left: -3px;
-  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902; }
+  text-shadow: 1px 1px lightgrey, 2px 2px lightgrey, 3px 3px lightgrey, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey; }
 
 .paragraph-redesign {
-  font-size: 20px;
-  max-width: 50%; }
+  font-size: 25px;
+  max-width: 60%;
+  padding-left: 15px; }
 
-.redesign-sentence {
-  color: #243d87;
-  text-shadow: 2px bold grey;
-  font-weight: bold; }
+.blue-font {
+  color: #325aa8; }
+
+.purple-font {
+  color: #325aa8; }
 
 .u-center-text {
   text-align: center; }
@@ -256,9 +295,6 @@ body {
   padding: 0rem 0;
   margin-top: 0vh;
   margin: 10px; }
-  @media (min-width: 768px) {
-    .section-projects {
-      width: 100%; } }
 
 .section-features {
   padding: 30px;
