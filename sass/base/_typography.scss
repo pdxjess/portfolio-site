@@ -76,6 +76,9 @@ body {
   color: #325aa8;
 }
 
-.purple-font {
-  color: #325aa8;
+.section-about:hover > h3 {
+  position: relative;
+  top: -3px;
+  left: -3px;
+  text-shadow: 1px 1px lightgrey, 2px 2px lightgrey, 3px 3px lightgrey, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey;
 }

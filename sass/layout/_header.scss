@@ -51,3 +51,9 @@ ul.nav-bar {
 .nav-bar li:hover {
   border-bottom: 3px solid black;
 }
+.about-box img {
+  max-width: 500px;
+  position: absolute;
+  padding: 20px;
+  margin: 20px;
+}

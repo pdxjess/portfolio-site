@@ -146,8 +146,11 @@ body {
 .blue-font {
   color: #325aa8; }
 
-.purple-font {
-  color: #325aa8; }
+.section-about:hover > h3 {
+  position: relative;
+  top: -3px;
+  left: -3px;
+  text-shadow: 1px 1px lightgrey, 2px 2px lightgrey, 3px 3px lightgrey, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey; }
 
 .u-center-text {
   text-align: center; }
@@ -294,12 +297,22 @@ ul.nav-bar {
 .nav-bar li:hover {
   border-bottom: 3px solid black; }
 
+.about-box img {
+  max-width: 500px;
+  position: absolute;
+  padding: 20px;
+  margin: 20px; }
+
 .section-projects {
   background-color: white;
   padding: 0rem 0;
   margin-top: 0vh;
-  margin: 10px; }
-
-.section-features {
-  padding: 30px;
+  margin: 10px;
   height: 100vh; }
+
+.section-about {
+  padding: 30px;
+  height: 100vh;
+  font-size: 25px;
+  max-width: 60%;
+  padding-left: 15px; }
