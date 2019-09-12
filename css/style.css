@@ -61,10 +61,29 @@ html {
         left: 45%; }
       html .paragraph-redesign {
         max-width: 100%;
+        padding-left: 10px; }
+      html .about-box {
+        max-width: 325px;
+        max-height: 225px;
+        right: 3%; }
+      html .about-box img {
+        max-width: 425px;
+        max-height: 250px;
+        left: 5%;
+        top: 8%; }
+      html .section-about {
+        max-width: 100%;
         padding-left: 10px; } }
-  @media (max-width: 900px) {
+  @media (min-width: 600px) and (max-width: 900px) {
     html {
-      font-size: 60%; } }
+      font-size: 60%; }
+      html .about-box {
+        max-width: 440px;
+        max-height: 300px;
+        right: 2%; }
+      html .about-box img {
+        max-width: 450px;
+        max-height: 325px; } }
   @media (max-width: 1200px) {
     html {
       font-size: 60%; } }
@@ -146,11 +165,23 @@ body {
 .blue-font {
   color: #325aa8; }
 
-.section-about:hover > h3 {
+.section-about {
+  font-size: 25px;
+  padding-left: 15px;
+  max-width: 60%; }
+
+.section-about h3 {
   position: relative;
+  max-width: 60%;
   top: -3px;
   left: -3px;
-  text-shadow: 1px 1px lightgrey, 2px 2px lightgrey, 3px 3px lightgrey, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey; }
+  text-shadow: 1px 1px pink, 2px 2px pink, 3px 3px pink, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey; }
+
+.section-connect h3 {
+  font-size: 40px;
+  position: relative;
+  padding: 10px;
+  text-shadow: 1px 1px #dbd163, 2px 2px #dbd163, 3px 3px #dbd163, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey; }
 
 .u-center-text {
   text-align: center; }
@@ -298,10 +329,22 @@ ul.nav-bar {
   border-bottom: 3px solid black; }
 
 .about-box img {
-  max-width: 500px;
+  max-width: 700px;
   position: absolute;
   padding: 20px;
-  margin: 20px; }
+  right: 4.5%;
+  top: 5%;
+  margin: -30px;
+  overflow: hidden; }
+
+.about-box {
+  position: absolute;
+  right: 5%;
+  margin: 20px;
+  height: 500px;
+  width: 700px;
+  padding: 15px;
+  box-shadow: 8px 8px 8px 8px lightgrey; }
 
 .section-projects {
   background-color: white;
@@ -314,5 +357,10 @@ ul.nav-bar {
   padding: 30px;
   height: 100vh;
   font-size: 25px;
-  max-width: 60%;
+  padding-left: 15px; }
+
+.section-connect {
+  padding: 30px;
+  height: 100vh;
+  font-size: 25px;
   padding-left: 15px; }

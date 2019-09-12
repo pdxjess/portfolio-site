@@ -52,8 +52,21 @@ ul.nav-bar {
   border-bottom: 3px solid black;
 }
 .about-box img {
-  max-width: 500px;
+  max-width: 700px;
   position: absolute;
   padding: 20px;
+  right: 4.5%;
+  top: 5%;
+  margin: -30px;
+  overflow: hidden;
+}
+
+.about-box {
+  position: absolute;
+  right: 5%;
   margin: 20px;
+  height: 500px;
+  width: 700px;
+  padding: 15px;
+  box-shadow: 8px 8px 8px 8px lightgrey;
 }
