@@ -5,9 +5,9 @@ let sideNav = $(".sidenav");
   // get the complete hight of window
     let theTop = $(".section-projects").offset().top - window.innerHeight;
     if ($(window).scrollTop() > theTop) {
-      sideNav.addClass("sticky");
+      $(".sidenav").fadeIn(2000);
     } else {
-      sideNav.removeClass("sticky");
+      $(".sidenav").hide();
     }
   });
 });
