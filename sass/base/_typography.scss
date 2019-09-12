@@ -91,24 +91,10 @@ body {
 }
 
 .section-connect h3 {
-    font-size: 4rem;
-    position: absolute;
-    font-family: 'Lato', sans-serif;
-    color: #dfb920;
-    text-align: center;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    display: inline;
-  }
-  // Adds 3D effect to header
-  .section-connect:after {
-    content: "REACH OUT";
-    position: absolute;
-    font-size: 4rem;
-    font-weight: 900;
-    top: 329.7%;
-    letter-spacing: 1px;
-    color: #484848;
+  position: relative;
+  max-width: 80%;
+  font-size: 40px;
+  top: -3px;
+  left: -3px;
+  text-shadow: 1px 1px gold, 2px 2px gold, 3px 3px gold, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey;
   }

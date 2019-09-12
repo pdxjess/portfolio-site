@@ -46,10 +46,6 @@ html {
       max-height: 300px;
       right: 2%;
     }
-    .about-box img {
-      max-width: 450px;
-      max-height: 325px;
-    }
   }
   @include respond(tab-land) {
     font-size: 60%;

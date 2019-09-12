@@ -80,10 +80,7 @@ html {
       html .about-box {
         max-width: 440px;
         max-height: 300px;
-        right: 2%; }
-      html .about-box img {
-        max-width: 450px;
-        max-height: 325px; } }
+        right: 2%; } }
   @media (max-width: 1200px) {
     html {
       font-size: 60%; } }
@@ -185,25 +182,12 @@ body {
   text-shadow: 1px 1px pink, 2px 2px pink, 3px 3px pink, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey; }
 
 .section-connect h3 {
-  font-size: 4rem;
-  position: absolute;
-  font-family: 'Lato', sans-serif;
-  color: #dfb920;
-  text-align: center;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   position: relative;
-  display: inline; }
-
-.section-connect:after {
-  content: "REACH OUT";
-  position: absolute;
-  font-size: 4rem;
-  font-weight: 900;
-  top: 329.7%;
-  letter-spacing: 1px;
-  color: #484848; }
+  max-width: 80%;
+  font-size: 40px;
+  top: -3px;
+  left: -3px;
+  text-shadow: 1px 1px gold, 2px 2px gold, 3px 3px gold, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey; }
 
 .u-center-text {
   text-align: center; }
