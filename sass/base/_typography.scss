@@ -98,3 +98,15 @@ body {
   left: -3px;
   text-shadow: 1px 1px gold, 2px 2px gold, 3px 3px gold, 4px 4px lightgrey, 5px 5px lightgrey, 6px 6px lightgrey;
   }
+
+  .social-links a {
+    text-decoration: none;
+    padding: 3px;
+    color: #484848;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .social-links a:hover {
+    text-decoration: underline;
+  }
