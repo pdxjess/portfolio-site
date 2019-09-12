@@ -97,6 +97,13 @@ html {
 body {
   box-sizing: border-box; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 1.5s ease; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -306,27 +313,27 @@ body {
   .arrow img:hover {
     cursor: pointer; }
 
-ul.nav-bar {
-  position: absolute;
-  right: 0%;
-  padding-right: 20px; }
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 10px;
+  overflow-x: hidden;
+  padding: 8px 0; }
 
-.nav-bar li {
-  list-style: none;
-  padding: 10px 10px 10px 10px;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: 'Tajawal', sans-serif;
-  font-weight: 900;
-  letter-spacing: 1px; }
-
-.nav-bar li a {
+.sidenav a {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  color: black; }
+  font-size: 25px;
+  color: #2196F3;
+  display: block; }
 
-.nav-bar li:hover {
-  border-bottom: 3px solid black; }
+.sidenav img {
+  width: 40px; }
+
+.sidenav img:hover {
+  width: 45px; }
 
 .about-box img {
   max-width: 700px;
@@ -351,16 +358,19 @@ ul.nav-bar {
   padding: 0rem 0;
   margin-top: 0vh;
   margin: 10px;
-  height: 100vh; }
+  height: 100vh;
+  margin-right: 80px; }
 
 .section-about {
   padding: 30px;
   height: 100vh;
   font-size: 25px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  margin-right: 80px; }
 
 .section-connect {
   padding: 30px;
   height: 100vh;
   font-size: 25px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  margin-right: 80px; }

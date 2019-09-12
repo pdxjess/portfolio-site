@@ -64,3 +64,11 @@ html {
 body {
   box-sizing: border-box;
 }
+
+.sticky {
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
